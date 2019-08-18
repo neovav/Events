@@ -42,4 +42,5 @@ Notifier::notify($notice_dbg);
 Notifier::detach($subscr_dbg);
 ```
 
-For more samples view in directory : samples/samples.php.
+For more samples view in directory : samples
+Main file in samples: samples/sample.php
