@@ -1,8 +1,8 @@
 {
-  "name": "facebook/webdriver",
-  "description": "A PHP client for Selenium WebDriver",
+  "name": "neovav\\Events",
+  "description": "A PHP lib with notifier for events",
   "keywords": ["event", "events", "notifier", "observer", "subscriber", "subscribers", "notice", "php", "neovav"],
-  "homepage": "https://github.com/neovav/Notifier",
+  "homepage": "https://github.com/neovav/Events",
   "type": "library",
   "license": "Apache-2.0",
   "support": {
