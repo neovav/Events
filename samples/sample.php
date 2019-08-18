@@ -4,7 +4,7 @@ use \neovav\Events\Notice;
 use \neovav\Events\IEventData;
 use neovav\Events\Subscriber;
 
-require_once '..\vendor\autoload.php';
+require_once '..'.DIRECTORY_SEPARATOR.'vendor'.DIRECTORY_SEPARATOR.'autoload.php';
 
 include_once 'log.php';
 include_once 'debug.php';
