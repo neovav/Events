@@ -22,6 +22,8 @@ composer install
 use \neovav\Events\Subscriber;
 use \neovav\Events\Notifier;
 use \neovav\Events\INotice;
+use \neovav\Events\Notice;
+use \neovav\Events\IEventData;
 
 require_once '..\vendor\autoload.php';
 
