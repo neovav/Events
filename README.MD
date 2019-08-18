@@ -8,7 +8,7 @@ This is sample how use Events libs with Notifier
 
 ### Installation
 
-For use neovav/Events in your project, run:
+For installations neovav/Events, run:
 
 ```bash
 git clone https://github.com/neovav/Events
