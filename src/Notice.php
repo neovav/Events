@@ -6,7 +6,7 @@ namespace neovav\Events;
  *
  * @author neovav <neovav@@outlook.com>
  * @date 2019.08.17 08:20
- * @version 0.0.1
+ * @version 0.0.2
  */
 
 class Notice implements INotice
@@ -15,7 +15,7 @@ class Notice implements INotice
     const AUTH      = 'NeoVAV';
 
     /** @var string         Number version                  */
-    const VERSION   = '0.0.1';
+    const VERSION   = '0.0.2';
 
     private $sender;
     private $name;
@@ -63,7 +63,7 @@ class Notice implements INotice
      */
     public function isEventType() :bool
     {
-        return is_null($this->type);
+        return !is_null($this->type);
     }
 
     /**
@@ -73,7 +73,17 @@ class Notice implements INotice
      */
     public function getEventType() :string
     {
-        return $this->name;
+        return $this->type;
+    }
+
+    /**
+     * Check event data
+     *
+     * @return bool
+     */
+    public function isEventData() :bool
+    {
+        return $this->data instanceof IEventData;
     }
 
     /**
@@ -81,7 +91,7 @@ class Notice implements INotice
      *
      * @return IEventData
      */
-    public function getEventDate() :IEventData
+    public function getEventData() :IEventData
     {
         return $this->data;
     }

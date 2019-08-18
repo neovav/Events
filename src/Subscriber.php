@@ -8,7 +8,7 @@ use \Exception;
  *
  * @author neovav <neovav@@outlook.com>
  * @date 2019.08.17 08:20
- * @version 0.0.1
+ * @version 0.0.2
  */
 
 class Subscriber implements ISubscriber
@@ -18,7 +18,7 @@ class Subscriber implements ISubscriber
     const AUTH      = 'NeoVAV';
 
     /** @var string         Number version                  */
-    const VERSION   = '0.0.1';
+    const VERSION   = '0.0.2';
 
     /** @var int            Unknow notice type*/
     const EX_ERROR_NOTICE_TYPE = 1;
@@ -43,11 +43,11 @@ class Subscriber implements ISubscriber
      * @param string $event_name        Event name for subscribe
      * @param callable $update
      * @param string $event_type        Event type for subscribe
-     * @param string $order_notice      Order for subscriber to the queue
+     * @param int $order_notice         Order for subscriber to the queue
      *
-     * @throws
+     * @throws \Exception
      */
-    public function __construct(string $event_name, callable $update, string $event_type = null, string $order_notice = Notifier::ORD_NOT_SET)
+    public function __construct(string $event_name, callable $update, string $event_type = null, int $order_notice = Notifier::ORD_NOT_SET)
     {
         if (!in_array($order_notice, self::$list_ord, true))
             throw new Exception('Unknow notice type', self::EX_ERROR_NOTICE_TYPE);
@@ -103,7 +103,7 @@ class Subscriber implements ISubscriber
      *
      * @return callable
      */
-    public function getUpdate() :string
+    public function getUpdate() :callable
     {
         return $this->update;
     }

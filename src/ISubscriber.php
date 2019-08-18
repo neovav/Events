@@ -6,7 +6,7 @@ namespace neovav\Events;
  *
  * @author neovav <neovav@@outlook.com>
  * @date 2019.08.17 09:20
- * @version 0.0.1
+ * @version 0.0.2
  */
 
 interface ISubscriber
@@ -44,5 +44,5 @@ interface ISubscriber
      *
      * @return callable
      */
-    public function getUpdate() :string;
+    public function getUpdate() :callable;
 }
