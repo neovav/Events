@@ -1,5 +1,5 @@
 {
-  "name": "neovav\\Events",
+  "name": "neovav/Events",
   "description": "A PHP lib with notifier for events",
   "keywords": ["event", "events", "notifier", "observer", "subscriber", "subscribers", "notice", "php", "neovav"],
   "homepage": "https://github.com/neovav/Events",
